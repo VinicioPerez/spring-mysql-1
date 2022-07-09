@@ -1,6 +1,5 @@
 package ec.edu.insteclrg.dto;
 
-import ec.edu.insteclrg.domin.Provincia;
 import lombok.Data;
 
 @Data
@@ -10,6 +9,6 @@ public class CiudadDTO {
 	
 	private String nombreCiudad;
 
-	private Provincia idProvincia;
+	private ProvinciaDTO provincia;
 
 }
