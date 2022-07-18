@@ -1,5 +1,11 @@
 package ec.edu.insteclrg.persintence;
 
-public interface CiudadRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import ec.edu.insteclrg.domin.Ciudad;
+
+public interface CiudadRepository extends JpaRepository<Ciudad, Long> {
+	
+	public Ciudad findByNombre(String nombre);
 
 }

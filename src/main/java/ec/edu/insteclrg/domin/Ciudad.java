@@ -19,13 +19,13 @@ public class Ciudad {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(updatable = false, nullable = false)
-	private Long idCiudad;	
+	private Long id;	
 	
 	@Column(nullable = false)
-	private String nombreCiudad;
+	private String nombre;
 
 	@ManyToOne
-	@JoinColumn(name = "Provincia_idProvincia")
+	@JoinColumn(name = "Provincia_id")
 	private Provincia provincia;
 
 }
