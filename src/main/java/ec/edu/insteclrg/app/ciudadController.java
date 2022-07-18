@@ -22,6 +22,5 @@ public class ciudadController {
 			return "Guardado Ciudad Correctamente";		
 		}
 		
-		//Que es fork
-		//cual es la diferencia en un fork y clonar
+		
 }
